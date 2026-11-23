@@ -169,9 +169,11 @@ Planted mess for the cleaning step: 10 duplicate IDs, 4 unreadable created dates
 
 ## Screenshots
 
-TODO (owner): add screenshot of the English dashboard as `docs/dashboard-en.png`, then replace this line with `![Dashboard in English](docs/dashboard-en.png)`.
+The dashboard with the sample data (synthetic data for Puentara, a fictional company).
 
-TODO (owner): add screenshot of the Spanish dashboard as `docs/dashboard-es.png`, then replace this line with `![Dashboard en español](docs/dashboard-es.png)`.
+![Dashboard in English](docs/dashboard-en.png)
+
+![Dashboard en español](docs/dashboard-es.png)
 
 ## How it works
 
