@@ -56,6 +56,32 @@ These patterns were **planted** by the data script so the report has something t
 - **The script planted 1.6x for Spanish, and the report shows 1.9x.** The script slows Spanish replies on each priority's own clock, which is business hours for most tickets. The report measures the wall-clock time the customer actually waited. A longer business-hours delay is more likely to run past closing time or into a weekend, and those hours count for the customer. That turns 1.6x into 1.9x. A real lead would want to know both numbers, which is why the report states how it measures.
 - **"Card lost or stolen has the lowest SLA share: 70%" is not a finding.** Nobody planted it. Lost cards always get the strictest target, 60 minutes around the clock, and the planted Spanish slowness pushes many Spanish lost-card replies past that hour. Tax forms is at 71%, almost the same. On real data I would check this line before calling it a problem.
 
+## How I would measure time saved
+
+The small walkthrough uses [`tiny_export.csv`](data/tiny_export.csv), a synthetic export. The report reads 13 source rows, keeps 11 valid unique tickets, and reports a 60% first-response SLA (6 met out of 10 with a known outcome). The duplicate and the invalid creation date are visible in the data-quality section. A ticket that still had time to be answered stays outside the denominator.
+
+### Illustrative time model
+
+These are planning assumptions for one weekly report. They are not stopwatch measurements or client results.
+
+| Task | Spreadsheet workflow | Script-assisted workflow |
+|---|---:|---:|
+| Export and open the CSV | 5 min | 5 min |
+| Clean rows and review exceptions | 15 min | 5 min |
+| Calculate metrics or run the report | 20 min | 2 min |
+| Check five tickets and review the report | 10 min | 8 min |
+| **Total active operator time** | **50 min** | **20 min** |
+
+Under those assumptions, the difference is 30 minutes per report. The script-assisted estimate still includes review. Initial column mapping and any ongoing maintenance should be tracked as separate costs. If the client already has a report that meets the same needs faster, the pilot should surface that.
+
+### How I would measure it with a client
+
+1. Agree on a single export schema, one reporting window, the business calendar, category floors and the definition of a final report.
+2. Run the current workflow and the script-assisted workflow on the same approved input. Time from opening the export to having a report ready for the same reviewer. Keep active staff time, waiting time and one-time setup in separate columns.
+3. Verify counts, the SLA numerator and denominator, and the disposition of five tickets. Include a late reply, a currently open ticket and a case that crosses business hours where the sample allows.
+4. Repeat on at least three comparable exports. Alternate which method runs first and include time spent correcting exceptions. Report the median paired difference in active minutes per report, the observed range and any metric discrepancies.
+5. Confirm the result with the lead. Compare recurring time savings with the measured setup and maintenance effort before estimating payback. A change in reporting time does not establish a change in customer SLA performance.
+
 ## Adapting it for a real team
 
 - **Your export, your columns.** Send a sample export (a few rows with the text removed is enough). I add your helpdesk's column names and any custom category field to `config.py`. Zendesk and Freshdesk names are already covered.
