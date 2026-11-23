@@ -30,7 +30,7 @@ You need **Python 3.11 or newer** and Git. No API key and no account. Built and 
 **PowerShell (Windows)**
 
 ```powershell
-git clone <repo-url> C:\dev\bilingual-ticket-analytics
+git clone https://github.com/RawBud11/bilingual-ticket-analytics.git C:\dev\bilingual-ticket-analytics
 cd C:\dev\bilingual-ticket-analytics
 python -m venv .venv
 .venv\Scripts\python -m pip install -r requirements.txt
@@ -43,7 +43,7 @@ These commands call the venv's Python directly, so you don't need to activate it
 **bash (macOS, Linux)**
 
 ```bash
-git clone <repo-url> bilingual-ticket-analytics
+git clone https://github.com/RawBud11/bilingual-ticket-analytics.git bilingual-ticket-analytics
 cd bilingual-ticket-analytics
 python3 -m venv .venv
 source .venv/bin/activate
