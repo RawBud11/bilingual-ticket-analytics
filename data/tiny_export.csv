@@ -1,0 +1,14 @@
+ticket_id,created_at,customer_id,channel,language,subject,category,priority,status,assignee,first_response_at,solved_at,satisfaction
+T1,2026-10-12 09:00,XXXX-0001,email,en,Lost my card,card_lost_stolen,low,solved,Sam Demo,2026-10-12 09:30,2026-10-12 12:00,good
+T2,2026-10-12 10:00,XXXX-0002,chat,es,Mi transferencia no llega,transfer_failed_pending,high,solved,Mateo Demo,2026-10-12 15:00,2026-10-13 10:00,bad
+T3,2026-10-13 17:00,XXXX-0003,email,en,Monthly fee question,fees,normal,solved,Jordan Demo,2026-10-14 09:00,2026-10-14 11:00,
+T3,2026-10-13 17:00,XXXX-0003,email,en,Monthly fee question,fees,normal,solved,Jordan Demo,2026-10-14 09:00,2026-10-14 11:00,
+T4,2026-10-16 17:30,XXXX-0004,phone,es,No puedo entrar a mi cuenta,account_access,high,solved,Mateo Demo,2026-10-19 11:30,2026-10-19 14:00,good
+T5,2026-10-17 11:00,XXXX-0005,chat,es,¿Cuál es el horario de atención?,general_question,low,solved,Mateo Demo,2026-10-17 12:00,2026-10-17 12:30,
+T6,2026-10-19 08:00,XXXX-0006,email,en,App crashes on Cards,app_bug,normal,open,Sam Demo,2026-10-19 09:00,,
+T7,2026-10-19 09:00,XXXX-0007,chat,es,Me cobraron dos veces,charge_dispute,Alta,solved,Mateo Demo,2026-10-19 10:00,2026-10-20 09:00,
+T8,2026-10-20 10:00,XXXX-0008,email,,"Perdí mi tarjeta, ¿me la pueden bloquear?",Tarjeta perdida o robada,urgent,solved,Mateo Demo,2026-10-20 11:30,2026-10-20 13:00,
+T9,2026-10-21 14:00,XXXX-0009,chat,en,Transfer still pending,transfer_failed_pending,high,open,Jordan Demo,,,
+T10,2026-10-23 15:00,XXXX-0010,email,es,Me robaron la tarjeta,card_lost_stolen,urgent,new,,,,
+T11,2026-10-23 16:30,XXXX-0011,chat,en,Do you have a plan for teams?,general_question,low,new,,,,
+T12,23/10/2026 10:00,XXXX-0012,email,en,What are your support hours?,general_question,low,new,,,,

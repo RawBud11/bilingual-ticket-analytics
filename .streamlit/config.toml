@@ -1,0 +1,9 @@
+# Streamlit settings for this project.
+[server]
+# Skip the first-run "enter your email" prompt in the terminal, so
+# `streamlit run app.py` opens the dashboard straight away.
+showEmailPrompt = false
+
+[browser]
+# Do not send usage statistics to Streamlit.
+gatherUsageStats = false

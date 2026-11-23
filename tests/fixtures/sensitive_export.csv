@@ -1,0 +1,5 @@
+Id,Requester,Requester id,Subject,Description,Status,Priority,Via,Created at,First reply at,Solved at,Category,Satisfaction Score
+S-1,cliente.demo42@example.com,XXXX-7731,Card stolen,"Someone stole my card. My card is 0000 4417 8823 9906, CVV 917.",Solved,Low,Chat,2026-10-19 09:00,2026-10-19 09:20,2026-10-19 11:00,Card lost or stolen,Good
+S-2,cliente.demo43@example.com,XXXX-7732,Código raro,"Me llegó el código 583920 que no pedí y ya no puedo entrar a mi cuenta.",Open,,Mail,2026-10-19 10:00,2026-10-19 10:40,,Acceso a la cuenta,
+S-3,cliente.demo44@example.com,XXXX-7733,,"Mi tarjeta es 0000441788239906 y el CVV 917, ¿me la bloquean?",New,Urgent,Phone,2026-10-20 08:30,,,Tarjeta perdida o robada,
+S-4,cliente.demo45@example.com,XXXX-7734,Transfer pending,"My transfer is pending. My one-time code is 774102 if you need it.",Solved,High,Mail,2026-10-20 09:00,2026-10-20 11:00,2026-10-20 16:00,Failed or pending transfer,Bad

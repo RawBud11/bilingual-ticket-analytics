@@ -1,0 +1,27 @@
+
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+
+# Private working notes and freelance copy
+NOTES.md
+UPWORK.md
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Generated output (report.py writes here)
+output/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node (not used here, listed so nothing slips in)
+node_modules/

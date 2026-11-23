@@ -1,0 +1,71 @@
+Real output of report.py on the committed synthetic sample (data/sample_export.csv, made by scripts/generate_data.py --seed 42).
+Sample data: Puentara is a fictional company. The patterns were planted by the generator; see its docstring.
+Captured 2026-11-23 on Windows 11, PowerShell 5.1, Python 3.14.
+
+> python report.py data/sample_export.csv --lang es
+Informe de tickets de soporte
+Tickets creados del 2026-08-03 al 2026-10-25
+Tickets abiertos y SLA calculados al 2026-10-25 23:56
+
+Calidad de los datos
+  Filas leídas: 1201
+  IDs de ticket duplicados eliminados: 10
+  Filas omitidas porque no se pudo leer la fecha de creación: 4
+  Fechas de primera respuesta o resolución ignoradas (no se pudieron leer o son anteriores a la creación): 0
+  Idioma vacío completado por el detector: 91
+  Prioridad subida al mínimo de la categoría: 6
+  Tickets sin una categoría conocida: 0
+  Columnas que no se usan y se quitaron al cargar: 2
+  Tickets usados: 1187
+
+Cifras clave
+  Tickets: 1187
+  Mediana de primera respuesta: 5.2 h
+  Primeras respuestas dentro del SLA: 78 %
+  Tickets abiertos: 39
+  Porcentaje en español: 39 %
+
+Lo que destaca
+  - Los tickets en español esperan 1.9 veces más que los tickets en inglés por la primera respuesta (mediana de 7.2 h frente a 3.7 h).
+  - Los tickets de transferencia fallida o pendiente subieron en la semana del 2026-09-14: 51, cuando lo habitual son 12 por semana.
+  - Los tickets en español pasaron del 33 % del total en las primeras 4 semanas al 47 % en las últimas 4 semanas.
+  - 18 tickets abiertos tienen 7 o más días hábiles de antigüedad; 18 de ellos son de la categoría error en la app.
+  - Tarjeta perdida o robada es la categoría que menos cumple el SLA de primera respuesta: 70 % (65 de 93).
+
+Listo: output/summary.md
+Se guardaron 10 tablas CSV en output
+Listo: output/summary.html
+
+> python report.py data/sample_export.csv --lang en
+Support ticket report
+Tickets created from 2026-08-03 to 2026-10-25
+Backlog and open SLAs as of 2026-10-25 23:56
+
+Data quality
+  Rows read: 1201
+  Duplicate ticket IDs removed: 10
+  Rows skipped, created date not readable: 4
+  First reply or solved dates ignored (not readable or before created): 0
+  Blank language filled in by the detector: 91
+  Priority raised to the category minimum: 6
+  Tickets with no known category: 0
+  Columns not used and dropped on load: 2
+  Tickets used: 1187
+
+Key numbers
+  Tickets: 1187
+  Median first reply: 5.2 h
+  First replies within SLA: 78%
+  Open backlog: 39
+  Spanish share: 39%
+
+What stands out
+  - Spanish tickets wait 1.9x as long as English ones for a first reply (median 7.2 h vs 3.7 h).
+  - Failed or pending transfer tickets jumped in the week of 2026-09-14: 51, compared with a typical 12 per week.
+  - Spanish tickets went from 33% of all tickets in the first 4 weeks to 47% in the last 4 weeks.
+  - 18 open tickets are 7 or more business days old; 18 of them in the app bug category.
+  - Card lost or stolen has the lowest share of first replies within SLA: 70% (65 of 93).
+
+Wrote output/summary.md
+Wrote 10 CSV tables to output
+Wrote output/summary.html
